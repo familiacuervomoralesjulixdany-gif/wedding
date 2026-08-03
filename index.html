@@ -1203,7 +1203,7 @@
         "guestPasses", "guestMessage", "heroMapButton", "welcomeMessage",
         "countdownSection", "countdownDays", "countdownHours", "countdownMinutes",
         "countdownSeconds", "storySection", "storyTitle", "storyText", "detailDate",
-        "detailTime", "venueName", "venueAddress", "mapVenueName", "mapVenueAddress",
+        "detailTime", "venueName", "venueAddress",
         "mapButton", "gallerySection", "galleryGrid", "dressCodeSection", "dressCodeText",
         "giftsSection", "giftMessage", "giftQr", "giftQrContainer", "giftPlaceholder",
         "whatsappButton", "rsvp", "rsvpIntro", "rsvpForm", "confirmedYes", "confirmedNo",
@@ -1444,18 +1444,16 @@
     }
 
     function renderEventDetails(event, links) {
-      elements.detailDate.textContent = formatLongDate(event.date);
-      elements.detailTime.textContent = formatTime(event.time);
-      elements.venueName.textContent = event.venue.name;
-      elements.venueAddress.textContent = event.venue.address;
-      elements.mapVenueName.textContent = event.venue.name;
-      elements.mapVenueAddress.textContent = event.venue.address;
+  elements.detailDate.textContent = formatLongDate(event.date);
+  elements.detailTime.textContent = formatTime(event.time);
+  elements.venueName.textContent = event.venue.name;
+  elements.venueAddress.textContent = event.venue.address;
 
-      if (links.map) {
-        elements.mapButton.href = links.map;
-        elements.mapButton.classList.remove("hidden");
-      }
-    }
+  if (links.map) {
+    elements.mapButton.href = links.map;
+    elements.mapButton.classList.remove("hidden");
+  }
+}
 
     function renderGallery(gallery, enabled) {
       if (!enabled || !Array.isArray(gallery) || gallery.length === 0) {
