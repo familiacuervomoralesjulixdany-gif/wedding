@@ -608,25 +608,23 @@
 }
 
 .gift-key {
-  width: 100%;
-  margin: 0;
-  padding: 16px 18px;
-  border-radius: var(--radius-sm);
-  background: color-mix(in srgb, var(--secondary) 18%, #fff);
-  color: #000;
-  font-size: 0.95rem;
-  text-align: center;
-  overflow-wrap: anywhere;
+    width: 100%;
+    padding: 18px;
+    border-radius: var(--radius-sm);
+    background: rgba(255,255,255,.55);
+    text-align: center;
 }
 
-.gift-key strong {
-  display: block;
-  width: 100%;
-  margin-top: 6px;
-  color: #000;
-  font-weight: 800;
-  font-size: clamp(1rem, 4vw, 1.25rem);
-  overflow-wrap: anywhere;
+.gift-key strong{
+    display:block;
+    margin-top:8px;
+    font-size:1.05rem;      /* reduce un poco el tamaño */
+    font-weight:800;
+    color:#000;
+    white-space:nowrap;      /* NO permite salto de línea */
+    word-break:normal;
+    overflow-wrap:normal;
+    letter-spacing:-0.3px;
 }
 
     .gift-placeholder {
@@ -1127,10 +1125,9 @@
   </div>
 
  <p class="gift-key">
-  Llave Bre-B:
-  <strong>juandanielcuervotaborda@gmail.com</strong>
+    Llave Bre-B:
+    <strong>juandanielcuervotaborda@gmail.com</strong>
 </p>
-
 </div>
       </div>
     </section>
