@@ -608,29 +608,26 @@
 }
 
 .gift-key {
+  width: 100%;
   margin: 0;
-  padding: 14px 18px;
+  padding: 16px 18px;
   border-radius: var(--radius-sm);
   background: color-mix(in srgb, var(--secondary) 18%, #fff);
-  color: rgba(41, 36, 36, 0.78);
-  font-size: 0.9rem;
+  color: #000;
+  font-size: 0.95rem;
+  text-align: center;
   overflow-wrap: anywhere;
 }
 
 .gift-key strong {
-  color: var(--primary);
-  font-weight: 700;
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  color: #000;
+  font-weight: 800;
+  font-size: clamp(1rem, 4vw, 1.25rem);
+  overflow-wrap: anywhere;
 }
-    .gift-qr {
-      width: min(100%, 320px);
-      aspect-ratio: 1;
-      margin: 0 auto;
-      object-fit: contain;
-      padding: 18px;
-      border-radius: var(--radius-md);
-      background: #fff;
-      box-shadow: var(--shadow-soft);
-    }
 
     .gift-placeholder {
       min-height: 320px;
@@ -1129,10 +1126,10 @@
     <p>La información para regalos se compartirá en esta sección.</p>
   </div>
 
-  <p class="gift-key">
-    Llave:
-    <strong>juandanielcuervotaborda@gmail.com</strong>
-  </p>
+ <p class="gift-key">
+  Llave:
+  <strong>juandanielcuervotaborda@gmail.com</strong>
+</p>
 
 </div>
       </div>
