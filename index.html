@@ -585,7 +585,42 @@
       box-shadow: 0 14px 35px color-mix(in srgb, var(--primary) 30%, transparent);
       font-size: 2rem;
     }
+.gift-qr-card {
+  display: grid;
+  gap: 22px;
+  align-content: center;
+  padding: clamp(24px, 4vw, 38px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+  backdrop-filter: blur(12px);
+}
 
+.gift-qr-title {
+  max-width: 520px;
+  margin: 0 auto;
+  font-family: var(--title-font);
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+  line-height: 1.2;
+  color: var(--text);
+}
+
+.gift-key {
+  margin: 0;
+  padding: 14px 18px;
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--secondary) 18%, #fff);
+  color: rgba(41, 36, 36, 0.78);
+  font-size: 0.9rem;
+  overflow-wrap: anywhere;
+}
+
+.gift-key strong {
+  color: var(--primary);
+  font-weight: 700;
+}
     .gift-qr {
       width: min(100%, 320px);
       aspect-ratio: 1;
@@ -1077,12 +1112,29 @@
           </a>
         </article>
 
-        <div id="giftQrContainer" class="reveal">
-          <img id="giftQr" class="gift-qr hidden" alt="Código QR para regalos">
-          <div id="giftPlaceholder" class="gift-placeholder">
-            <p>La información para regalos se compartirá en esta sección.</p>
-          </div>
-        </div>
+        <div id="giftQrContainer" class="gift-qr-card reveal">
+
+  <p class="gift-qr-title">
+    También puedes bendecir el comienzo de esta familia Cuervo Morales
+    de manera electrónica.
+  </p>
+
+  <img
+    id="giftQr"
+    class="gift-qr hidden"
+    alt="Código QR para regalos"
+  >
+
+  <div id="giftPlaceholder" class="gift-placeholder">
+    <p>La información para regalos se compartirá en esta sección.</p>
+  </div>
+
+  <p class="gift-key">
+    Llave:
+    <strong>juandanielcuervotaborda@gmail.com</strong>
+  </p>
+
+</div>
       </div>
     </section>
 
