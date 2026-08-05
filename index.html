@@ -607,24 +607,24 @@
   color: var(--text);
 }
 
-.gift-key {
-    width: 100%;
-    padding: 18px;
-    border-radius: var(--radius-sm);
-    background: rgba(255,255,255,.55);
-    text-align: center;
+.gift-key{
+    margin-top:18px;
+    text-align:center;
+    font-size:.95rem;
+    color:#555;
+    line-height:1.4;
 }
 
 .gift-key strong{
     display:block;
-    margin-top:8px;
-    font-size:1.05rem;      /* reduce un poco el tamaño */
-    font-weight:800;
+    margin-top:6px;
+    width:100%;
+    text-align:center;
+    font-weight:700;
     color:#000;
-    white-space:nowrap;      /* NO permite salto de línea */
-    word-break:normal;
-    overflow-wrap:normal;
-    letter-spacing:-0.3px;
+    font-size:clamp(.82rem,2.2vw,1rem);
+    letter-spacing:0;
+    white-space:nowrap;
 }
 
     .gift-placeholder {
@@ -1125,7 +1125,7 @@
   </div>
 
  <p class="gift-key">
-    Llave Bre-B:
+    <span>Llave Bre-B</span>
     <strong>juandanielcuervotaborda@gmail.com</strong>
 </p>
 </div>
